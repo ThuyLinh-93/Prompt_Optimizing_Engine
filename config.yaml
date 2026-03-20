@@ -1,0 +1,29 @@
+llm:
+  provider: "vllm"               # "vllm" | "openai"
+  vllm:
+    base_url: "http://10.1.100.61:8080/v1"
+    model: "gaunernst/gemma-3-27b-it-int4-awq"
+  openai:
+    model: "gpt-4o"
+  temperature: 0.3
+  max_tokens: 4096
+
+langsmith:
+  enabled: true
+  project: "prompt-optimizer"
+
+
+server:
+  host: "0.0.0.0"
+  port: 8080
+
+files:
+  script: "scripts_.json"
+  summary: "summary_.json"
+  prompt: "prompts_.st"
+  rubric: "score_.json"
+
+context:
+  max_input_tokens: 32000
+  strategy: "auto"               # auto | full | no_script | chunked
+  chunk_size: 2000

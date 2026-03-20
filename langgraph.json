@@ -1,0 +1,8 @@
+{
+  "graphs": {
+    "review": "./graph/review_graph.py:graph",
+    "optimize": "./graph/optimize_graph.py:optimize_graph"
+  },
+  "env": ".env",
+  "dependencies": ["."]
+}

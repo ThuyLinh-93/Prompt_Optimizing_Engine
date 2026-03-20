@@ -1,0 +1,10 @@
+services:
+  review-agent:
+    container_name: summary-review-agent
+    image: 10.202.227.93/ai-agent/ai-review-agent:latest
+    ports:
+      - "8085:8085"
+    volumes:
+      - /DATA/WEB/airnote-agent/squad:/app/squad
+    env_file:
+      - .env
