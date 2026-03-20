@@ -1,0 +1,43 @@
+plugins {
+	kotlin("jvm") version "1.9.25"
+	kotlin("plugin.spring") version "1.9.25"
+	id("org.springframework.boot") version "3.5.12-SNAPSHOT"
+	id("io.spring.dependency-management") version "1.1.7"
+}
+
+group = "com.rsupport"
+version = "0.0.1-SNAPSHOT"
+description = "ai-optimize-agent"
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+repositories {
+	mavenCentral()
+	maven { url = uri("https://repo.spring.io/snapshot") }
+}
+
+dependencies {
+	implementation("org.springframework.boot:spring-boot-starter")
+	implementation("org.springframework.boot:spring-boot-starter-webflux")
+	implementation("org.springframework.boot:spring-boot-starter-actuator")
+	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	implementation("io.github.oshai:kotlin-logging-jvm:7.0.3")
+	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("io.projectreactor:reactor-test")
+	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
+	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+}
+
+kotlin {
+	compilerOptions {
+		freeCompilerArgs.addAll("-Xjsr305=strict")
+	}
+}
+
+tasks.withType<Test> {
+	useJUnitPlatform()
+}
