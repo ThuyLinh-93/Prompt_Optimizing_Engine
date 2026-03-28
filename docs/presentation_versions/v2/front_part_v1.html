@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POE 발표 (앞부분)</title>
+  <style>
+    :root{
+      --bg:#efefef; --card:#f3f3f3; --text:#1f1f1f; --muted:#5b6470; --line:#d8dde5;
+      --accent:#c81423; --chip:#eef2f7;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);font-family:"Noto Sans KR","Pretendard",sans-serif;color:var(--text)}
+    .deck{height:100%;display:grid;place-items:center}
+    .slide{display:none;width:min(94vw,1460px);aspect-ratio:16/9;background:var(--card);border:1px solid #e1e1e1;border-radius:8px;padding:30px 38px;grid-template-rows:auto 1fr auto;gap:14px}
+    .slide.active{display:grid}
+    .head{display:flex;justify-content:space-between;align-items:flex-start}
+    .eyebrow{font-size:22px;color:#697386;font-weight:500}
+    .title{margin-top:2px;font-size:56px;font-weight:800;letter-spacing:-.02em;color:#2f3b4a}
+    .title strong{color:var(--accent)}
+    .num{font-size:19px;color:#777;font-weight:700}
+    .msg{border-top:1px solid var(--line);padding-top:10px;font-size:24px;font-weight:700}
+    .msg b{color:var(--accent)}
+    .foot{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:8px;font-size:14px;color:#6b7280}
+
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+    .hero .banner{border:1px solid #ced5df;border-radius:8px;overflow:hidden;background:#ddd;aspect-ratio:16/9}
+    .hero .banner img{width:100%;height:100%;object-fit:cover}
+    .hero .stack{display:grid;gap:12px}
+    .tag{display:inline-block;background:var(--chip);border:1px solid #d6dde8;border-radius:999px;padding:6px 12px;font-size:17px;font-weight:700;color:#3b4b60}
+
+    .agenda{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:26px;font-weight:700;color:#334155}
+
+    .problem{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}
+    .problem .img{border:1px solid #cfd5de;border-radius:8px;overflow:hidden;min-height:430px}
+    .problem .img img{width:100%;height:100%;object-fit:cover}
+    .problem .txt{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
+    .problem .txt h3{margin:0 0 12px;font-size:40px;color:#2f3b4a}
+    .problem .txt ul{margin:0;padding-left:24px;font-size:28px;line-height:1.45}
+
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
+    .card h3{margin:0 0 8px;font-size:32px;color:#2f3b4a}
+    .card p{margin:0;font-size:22px;line-height:1.45;color:#374151}
+    .flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:8px;align-items:stretch}
+    .f{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center;display:flex;flex-direction:column;justify-content:center;min-height:170px}
+    .f .n{display:inline-block;margin:0 auto 6px;background:#dce4f0;border-radius:999px;padding:3px 10px;font-weight:800}
+    .f .t{font-size:20px;font-weight:800;color:#2f3b4a}
+    .f .d{font-size:15px;color:#4b5563;line-height:1.35;margin-top:6px}
+    .arr{display:grid;place-items:center;color:#8a96a8;font-size:38px;font-weight:900}
+  </style>
+</head>
+<body>
+<div class="deck">
+
+  <!-- 1 -->
+  <section class="slide active">
+    <div class="head"><div><div class="eyebrow">AI회의록 SQUAD2 Team</div><div class="title">Project <strong>POE</strong></div></div><div class="num">1 / 6</div></div>
+    <div class="hero">
+      <div class="banner"><img src="draft_assets/image6.avif" alt="POE cover"/></div>
+      <div class="stack">
+        <div class="card"><h3>Automated Prompt Optimizing Engine</h3><p>평가(Evaluation) → 개선(Optimization) → 재평가(Loop)를 자동 수행하는 자가 개선 엔진</p></div>
+        <div><span class="tag">AI Agent</span> <span class="tag">Vibe Coding</span> <span class="tag">Workflow</span></div>
+      </div>
+    </div>
+    <div class="msg"><b>핵심:</b> 단순 실험이 아닌, 반복 운영 가능한 개선 엔진 구축</div>
+    <div class="foot"><span>앞부분 슬라이드(1~6) HTML</span><span>←/→ 이동 · F 전체화면</span></div>
+  </section>
+
+  <!-- 2 -->
+  <section class="slide">
+    <div class="head"><div><div class="eyebrow">Agenda</div><div class="title">발표 <strong>목차</strong></div></div><div class="num">2 / 6</div></div>
+    <div class="agenda">
+      <div class="item">1. Why POE? (The Problem)</div>
+      <div class="item">2. Mission & Outcomes</div>
+      <div class="item">3. Architecture & Vibe Coding</div>
+      <div class="item">4. Validation (The Proof)</div>
+      <div class="item">5. Workflow Pipeline</div>
+      <div class="item">6. Multi-Model Routing Strategy</div>
+      <div class="item">7. Live Demo</div>
+      <div class="item">8. Summary & Next Step</div>
+    </div>
+    <div class="msg"><b>핵심:</b> 문제 정의 → 방법론 → 검증 → 확장 계획</div>
+    <div class="foot"><span>보고서/시연 흐름과 동일</span><span>←/→ 이동</span></div>
+  </section>
+
+  <!-- 3 -->
+  <section class="slide">
+    <div class="head"><div><div class="eyebrow">1. Why POE? (The Problem)</div><div class="title">반복 수작업 <strong>자동화 필요</strong></div></div><div class="num">3 / 6</div></div>
+    <div class="problem">
+      <div class="img"><img src="draft_assets/image1.jpg" alt="problem 1"/></div>
+      <div class="txt">
+        <h3>핵심 이슈 1</h3>
+        <ul>
+          <li>품질 개선 작업이 반복적으로 발생</li>
+          <li>검토/수정에 사람 리소스 지속 소모</li>
+          <li>자동화 없이는 확장성 한계</li>
+        </ul>
+      </div>
+    </div>
+    <div class="msg"><b>핵심:</b> 품질 저하 대응이 아니라, 지속 개선의 자동화가 목적</div>
+    <div class="foot"><span>회의 피드백 반영</span><span>←/→ 이동</span></div>
+  </section>
+
+  <!-- 4 -->
+  <section class="slide">
+    <div class="head"><div><div class="eyebrow">1. Why POE? (The Problem)</div><div class="title">정량 기준점 <strong>확보 필요</strong></div></div><div class="num">4 / 6</div></div>
+    <div class="problem">
+      <div class="img"><img src="draft_assets/image2.jpg" alt="problem 2"/></div>
+      <div class="txt">
+        <h3>핵심 이슈 2</h3>
+        <ul>
+          <li>사람마다 평가 기준 편차 존재</li>
+          <li>주관적 판단으로 결과 일관성 저하</li>
+          <li>AI 기반 정량 기준점 필요</li>
+        </ul>
+      </div>
+    </div>
+    <div class="msg"><b>핵심:</b> AI를 기준점으로 삼아 품질 평가의 객관성 강화</div>
+    <div class="foot"><span>정량 평가 기준 강조</span><span>←/→ 이동</span></div>
+  </section>
+
+  <!-- 5 -->
+  <section class="slide">
+    <div class="head"><div><div class="eyebrow">1. Why POE? (The Problem)</div><div class="title">역할 분리 기반 <strong>전문성 강화</strong></div></div><div class="num">5 / 6</div></div>
+    <div class="problem">
+      <div class="img"><img src="draft_assets/image3.jpg" alt="problem 3"/></div>
+      <div class="txt">
+        <h3>핵심 이슈 3</h3>
+        <ul>
+          <li>단일 에이전트는 편향/과부하 위험</li>
+          <li>역할별 단일 책임(SR) 구조 필요</li>
+          <li>Review/Optimizer/Summary 분리 운영</li>
+        </ul>
+      </div>
+    </div>
+    <div class="msg"><b>핵심:</b> 역할 분리를 통해 상호 보완 + 단계별 전문성 확보</div>
+    <div class="foot"><span>Single Responsibility 원칙</span><span>←/→ 이동</span></div>
+  </section>
+
+  <!-- 6 -->
+  <section class="slide">
+    <div class="head"><div><div class="eyebrow">2. Mission & Outcomes</div><div class="title">목표 및 <strong>산출물</strong></div></div><div class="num">6 / 6</div></div>
+    <div class="content single" style="gap:14px">
+      <div class="grid2">
+        <div class="card"><h3>🎯 목표</h3><p>• Workflow(n8n)<br>• Agents<br>• spec.md<br>• Vibe coding validation</p></div>
+        <div class="card"><h3>🚩 산출물</h3><p>• Spec.md<br>• Code<br>• Improved files</p></div>
+      </div>
+      <div class="flow">
+        <div class="f"><div class="n">1</div><div class="t">개발</div><div class="d">바이브코딩으로 에이전트 구현</div></div>
+        <div class="arr">→</div>
+        <div class="f"><div class="n">2</div><div class="t">검증</div><div class="d">SPEC 기반 구현 검증</div></div>
+        <div class="arr">→</div>
+        <div class="f"><div class="n">3</div><div class="t">연결</div><div class="d">워크플로우 오케스트레이션</div></div>
+        <div class="arr">→</div>
+        <div class="f"><div class="n">4</div><div class="t">완성</div><div class="d">최종 파일 저장/버전 관리</div></div>
+      </div>
+    </div>
+    <div class="msg"><b>핵심:</b> 개발 → 검증 → 연결의 닫힌 루프 완성</div>
+    <div class="foot"><span>앞부분 종료, 다음은 Architecture/Validation 파트</span><span>Home/End</span></div>
+  </section>
+
+</div>
+<script>
+  const slides=[...document.querySelectorAll('.slide')]; let i=0;
+  const draw=()=>slides.forEach((s,idx)=>s.classList.toggle('active',idx===i));
+  addEventListener('keydown',e=>{
+    if(['ArrowRight','PageDown',' '].includes(e.key)&&i<slides.length-1)i++;
+    if(['ArrowLeft','PageUp'].includes(e.key)&&i>0)i--;
+    if(e.key==='Home')i=0; if(e.key==='End')i=slides.length-1;
+    if(e.key.toLowerCase()==='f')document.documentElement.requestFullscreen?.();
+    draw();
+  });
+  addEventListener('click',()=>{ if(i<slides.length-1){i++;draw();} });
+</script>
+</body>
+</html>

@@ -9,3 +9,4 @@
 
 ## Changelog
 - v1 (2026-03-28): `index_google_style.html` 초기 업로드
+- v2 (2026-03-28): front_part_v1.html (앞부분 1~6 슬라이드 HTML 초안)
