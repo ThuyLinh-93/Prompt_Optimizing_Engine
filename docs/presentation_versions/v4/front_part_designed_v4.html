@@ -1,0 +1,164 @@
+<!doctype html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>POE v4</title><style>
+:root{--bg:#eceef2;--card:#f8f9fb;--line:#d6dce6;--text:#1f2937;--muted:#6b7280;--accent:#dc2626}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);font-family:"Pretendard","Noto Sans KR",sans-serif;color:var(--text)}
+.deck{height:100%;display:grid;place-items:center}
+.slide{display:none;width:min(94vw,1480px);aspect-ratio:16/9;background:var(--card);border:1px solid #e1e6ee;border-radius:14px;padding:30px 34px;grid-template-rows:auto 1fr auto;gap:12px}
+.slide.active{display:grid}
+.head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:8px}
+.h-left{display:grid;gap:2px}
+.h-top{font-size:20px;color:#64748b;font-weight:600}
+.h-title{font-size:48px;font-weight:900;letter-spacing:-.02em;color:#111827}
+.h-title .red{color:var(--accent)}
+.h-num{font-size:18px;color:#6b7280;font-weight:700}
+.body{display:grid;gap:14px;min-height:0}
+.body.two{grid-template-columns:1.15fr .85fr}
+.body.one{grid-template-columns:1fr}
+.panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;min-height:0}
+.hero-img{width:100%;height:100%;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:#ddd}
+.lines{display:grid;gap:8px}
+.line{font-size:24px;line-height:1.35;font-weight:700}
+.line.small{font-size:20px;font-weight:600}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.chip{padding:6px 10px;border:1px solid #dbe2eb;border-radius:999px;background:#f4f7fb;font-size:15px;font-weight:700;color:#334155}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px}
+.card .t{font-size:28px;font-weight:900;margin-bottom:8px}
+.card .b{font-size:20px;line-height:1.4;font-weight:600}
+.biglist{display:grid;gap:8px}
+.bigitem{font-size:30px;line-height:1.25;font-weight:900}
+.flow3{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:8px;align-items:stretch}
+.flowcard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;display:grid;gap:8px;align-content:start;text-align:center}
+.flowcard .icon{font-size:42px}
+.flowcard .t{font-size:30px;font-weight:900}
+.flowcard .b{font-size:19px;line-height:1.4;font-weight:600}
+.arr{display:grid;place-items:center;font-size:42px;color:#94a3b8;font-weight:900}
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.step{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center;display:grid;gap:6px;align-content:start}
+.n{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:999px;background:#e2e8f0;color:#334155;font-weight:900;margin:0 auto}
+.step .t{font-size:18px;font-weight:900}
+.step .b{font-size:14px;line-height:1.35;font-weight:600;color:#4b5563}
+.footer{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:8px;color:#6b7280;font-size:13px}
+</style></head><body><div class="deck">
+<section class="slide" data-i="1">
+<div class="head"><div class="h-left"><div class="h-top">AI회의록 SQUAD2 Team</div><div class="h-title">Project <span class="red">POE</span></div></div><div class="h-num">1 / 7</div></div>
+<div class="body two">
+<div class="panel" style="padding:0;overflow:hidden"><img class="hero-img" src="draft_exact_assets/image6.avif" alt="cover"></div>
+<div class="panel"><div class="lines">
+<div class="line">Automated “</div>
+<div class="line">Prompt Optimizing Engine</div>
+<div class="line">”</div>
+</div><div class="chips">
+<span class="chip">Automated “</span>
+<span class="chip">Prompt Optimizing Engine</span>
+<span class="chip">”</span>
+</div></div></div>
+<div class="footer"><span>원본 텍스트/이미지 100% 사용</span><span>←/→ 이동 · F 전체화면</span></div>
+</section>
+<section class="slide" data-i="2">
+<div class="head"><div class="h-left"><div class="h-top">Agenda</div><div class="h-title">Why POE? (The Problem) </div></div><div class="h-num">2 / 7</div></div>
+<div class="body one"><div class="panel"><div class="grid2">
+<div class="card"><div class="b">Mission &amp;amp; Outcomes </div></div>
+<div class="card"><div class="b">Architecture &amp;amp; Vibe Coding </div></div>
+<div class="card"><div class="b">Validation (The Proof) </div></div>
+<div class="card"><div class="b">Workflow Pipeline </div></div>
+<div class="card"><div class="b">Multi-Model Routing Strategy</div></div>
+<div class="card"><div class="b">Live Demo </div></div>
+<div class="card"><div class="b">Summary</div></div>
+<div class="card"><div class="b"> &amp;amp; Next step</div></div>
+</div></div></div>
+<div class="footer"><span>원본 텍스트/이미지 100% 사용</span><span>←/→ 이동 · F 전체화면</span></div>
+</section>
+<section class="slide" data-i="3">
+<div class="head"><div class="h-left"><div class="h-top">1. 반복적인 수작업의 자동화의 필요성 </div><div class="h-title">1. Why POE? (The Problem) </div></div><div class="h-num">3 / 7</div></div>
+<div class="body two">
+<div class="panel" style="padding:0;overflow:hidden"><img class="hero-img" src="draft_exact_assets/image1.jpg" alt="slide3"></div>
+<div class="panel"><div class="lines">
+</div></div></div>
+<div class="footer"><span>원본 텍스트/이미지 100% 사용</span><span>←/→ 이동 · F 전체화면</span></div>
+</section>
+<section class="slide" data-i="4">
+<div class="head"><div class="h-left"><div class="h-top">1. Why POE? (The Problem) </div><div class="h-title">   2. </div></div><div class="h-num">4 / 7</div></div>
+<div class="body two">
+<div class="panel" style="padding:0;overflow:hidden"><img class="hero-img" src="draft_exact_assets/image2.jpg" alt="slide4"></div>
+<div class="panel"><div class="lines">
+<div class="line">정량적 평가보다 안정적인 기준점의 필요성</div>
+</div></div></div>
+<div class="footer"><span>원본 텍스트/이미지 100% 사용</span><span>←/→ 이동 · F 전체화면</span></div>
+</section>
+<section class="slide" data-i="5">
+<div class="head"><div class="h-left"><div class="h-top">3. 전문적인 역할 분리를 통해 상호 보안, 작용의 필요성</div><div class="h-title">1. Why POE? (The Problem) </div></div><div class="h-num">5 / 7</div></div>
+<div class="body two">
+<div class="panel" style="padding:0;overflow:hidden"><img class="hero-img" src="draft_exact_assets/image3.jpg" alt="slide5"></div>
+<div class="panel"><div class="lines">
+</div></div></div>
+<div class="footer"><span>원본 텍스트/이미지 100% 사용</span><span>←/→ 이동 · F 전체화면</span></div>
+</section>
+<section class="slide" data-i="6">
+<div class="head"><div class="h-left"><div class="h-top">&amp;gt; </div><div class="h-title">목표</div></div><div class="h-num">6 / 7</div></div>
+<div class="body one"><div class="panel">
+<div class="biglist">
+<div class="bigitem">&amp;gt; </div>
+<div class="bigitem">목표</div>
+<div class="bigitem">🎯</div>
+<div class="bigitem">&amp;gt; </div>
+<div class="bigitem">산출물</div>
+<div class="bigitem">🚩</div>
+</div>
+<div class="grid3" style="margin-top:10px">
+<div class="card"><div class="b">Workflow(n8n)</div></div>
+<div class="card"><div class="b">Agents</div></div>
+<div class="card"><div class="b">spec.md</div></div>
+<div class="card"><div class="b">Vibe coding validation</div></div>
+<div class="card"><div class="b">Spec.md</div></div>
+<div class="card"><div class="b">Code</div></div>
+<div class="card"><div class="b">Improved files</div></div>
+<div class="card"><div class="b">1</div></div>
+<div class="card"><div class="b">2</div></div>
+<div class="card"><div class="b">3</div></div>
+<div class="card"><div class="b">4</div></div>
+<div class="card"><div class="b"> </div></div>
+<div class="card"><div class="b"> </div></div>
+<div class="card"><div class="b"> </div></div>
+<div class="card"><div class="b">2. Mission &amp;amp; Outcomes </div></div>
+</div>
+</div></div>
+<div class="footer"><span>원본 텍스트/이미지 100% 사용</span><span>←/→ 이동 · F 전체화면</span></div>
+</section>
+<section class="slide" data-i="7">
+<div class="head"><div class="h-left"><div class="h-top">1. 프로젝트 개요 ( 🔍 What)</div><div class="h-title">정의:</div></div><div class="h-num">7 / 7</div></div>
+<div class="body one"><div class="panel"><div class="lines">
+<div class="line small">1. 프로젝트 개요 ( 🔍 What)</div>
+<div class="line small">정의:</div>
+<div class="line small"> AI가 사람 대신 요약본을 스스로 평가하고 프롬프트를 수정하는 </div>
+<div class="line small">&#x27;자가 개선 엔진(Self-Correction)&#x27;</div>
+<div class="line small">2. 핵심 목표 (🎯 Goal)</div>
+<div class="line small">평가(Evaluation)→개선(Optimization)→재평가(Loop)를 자동화해 </div>
+<div class="line small">요약 정확도</div>
+<div class="line small">와 </div>
+<div class="line small">일관성</div>
+<div class="line small">을 높입니다.</div>
+<div class="line small">3. 기대 효과 ( 🚀 Impact)</div>
+<div class="line small">품질 편차를 줄이고 </div>
+<div class="line small">반복 작업을 자동화</div>
+<div class="line small">하여 업무 속도와 결과 신뢰도를 동시에 개선합니다.</div>
+<div class="line small">4. 실행 전략 ( 🛠️ How)</div>
+<div class="line small">100% Vibe Coding:</div>
+<div class="line small"> 개발자 하드코딩 없이 AI 프롬프팅으로 아키텍처 자동 생성 </div>
+<div class="line small">n8n 오케스트레이션</div>
+<div class="line small">으로 에이전트를 연동하며, 90점 기준·최대 3회 루프로 운영합니다.</div>
+<div class="line small">AI회의록 Squad#2 Prompt Optimizing Engine - POE</div>
+</div>
+<div class="grid2" style="margin-top:10px">
+<div class="card" style="padding:6px"><img class="hero-img" style="aspect-ratio:16/4;height:auto" src="draft_exact_assets/image9.jpg" alt="image9.jpg"></div>
+<div class="card" style="padding:6px"><img class="hero-img" style="aspect-ratio:16/4;height:auto" src="draft_exact_assets/image10.png" alt="image10.png"></div>
+</div>
+</div></div>
+<div class="footer"><span>원본 텍스트/이미지 100% 사용</span><span>←/→ 이동 · F 전체화면</span></div>
+</section>
+</div><script>
+const slides=[...document.querySelectorAll('.slide')];let i=0;const draw=()=>slides.forEach((s,ix)=>s.classList.toggle('active',ix===i));draw();
+addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)&&i<slides.length-1)i++;if(['ArrowLeft','PageUp'].includes(e.key)&&i>0)i--;if(e.key==='Home')i=0;if(e.key==='End')i=slides.length-1;if(e.key.toLowerCase()==='f')document.documentElement.requestFullscreen?.();draw();});
+addEventListener('click',()=>{if(i<slides.length-1){i++;draw();}});
+</script></body></html>
